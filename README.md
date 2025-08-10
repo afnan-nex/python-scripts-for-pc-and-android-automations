@@ -201,7 +201,7 @@ Not just for simple tasks, this tool supports **complex automation workflows** a
 ## **⚙️ Installation**
 
 Clone the repository:  
-git clone https://github.com/yourusername/pyautogui-command-generator.git
+git clone https://github.com/afnan-nex/python-scripts-for-pc-and-android-automations.git
 
 1.  cd pyautogui-command-generator
 
