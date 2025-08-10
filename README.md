@@ -1,287 +1,131 @@
-# **PyAutoGUI Command Generator**
+# **Python Scripts for PC and Android Automations**
 
-A web-based tool for generating **PyAutoGUI** commands from screenshots or videos, paired with a Python script for automating product data entry using PyAutoGUI and ADB.
+This repository contains Python scripts and HTML-based tools for automating interactions on both PC and Android devices using pyautogui for PC automation and ADB (Android Debug Bridge) for Android automation. The tools provided include a web-based interface for generating ADB and PyAutoGUI commands by interacting with screenshots or videos, and a Python script for automating tasks such as product data entry and file transfers between Android and PC.
 
-## **📖 Table of Contents**
+## **Features**
 
-*   Overview
-*   Features
-*   Prerequisites
-*   Installation
-*   Usage
-    *   Web Interface
-    *   Python Automation Script
-*   How It Works
-*   Contributing
-*   License
+*   **ADB Command Generator**: A web interface that allows users to upload a screenshot or video of an Android device, select interaction modes (tap, swipe, hold), and generate corresponding ADB commands for automation.
+*   **PyAutoGUI Command Generator**: A similar web interface for generating PyAutoGUI commands for PC automation, supporting tap, swipe, hold, keyboard, and hotkey interactions.
+*   **Automation Script**: A Python script (main.py) that combines pyautogui and ADB commands to automate tasks like navigating websites, entering product data, and transferring files between an Android device and a PC.
+*   **Product Text Parsing**: The Python script parses product information from clipboard text, extracting fields like product name, description, and code for use in automation.
 
-## **🌟 Overview**
+## **Prerequisites**
 
-This project combines two powerful components:
+To use the tools and scripts in this repository, ensure you have the following:
 
-*   **Web Interface** – Generate PyAutoGUI commands by interacting with uploaded media.
-*   **Python Script** – Automate product data entry with PyAutoGUI for PC and ADB for Android.
+*   **Python 3.x** installed on your PC.
 
-Not just for simple tasks, this tool supports **complex automation workflows** across PC and mobile devices.
+**Required Python libraries**:  
+pip install pyautogui pyperclip
 
-## **✨ Features**
+*   **ADB (Android Debug Bridge)** installed and configured on your system. Ensure your Android device is connected and USB debugging is enabled.
+*   A modern web browser (e.g., Chrome, Firefox) to run the HTML-based command generators.
+*   A local server (e.g., python -m http.server) to serve the HTML files, as clipboard functionality requires HTTPS or localhost.
 
-### **Web Interface**
+## **Installation**
 
-*   Upload screenshots or videos to create PyAutoGUI commands.
-*   Interaction modes: **Tap, Swipe, Hold, Keyboard, Hotkey**.
-*   Visual feedback for swipe and hold with custom durations.
-*   Copy raw or formatted commands to clipboard.
-*   Clear or format commands for script integration.
-
-### **Python Script**
-
-*   Parses product data (name, description, code) from clipboard.
-*   Automates browser tasks with PyAutoGUI.
-*   Controls Android devices via ADB commands.
-*   Runs external Python scripts in the workflow.
-*   Configurable delays for reliable execution.
-
-## **🛠 Prerequisites**
-
-### **Web Interface**
-
-*   A modern browser (Chrome, Firefox, Edge, etc.).
-
-### **Python Script**
-
-*   Python 3.6+.
-*   Required packages:  
-    pip install pyautogui pyperclip
-*   ADB (Android Debug Bridge) installed and configured.
-*   Android device with USB debugging enabled.
-*   PyAutoGUI fail-safe enabled (move mouse to top-left to stop).
-
-## **⚙️ Installation**
-
-Clone the repository:  
-git clone https://github.com/yourusername/pyautogui-command-generator.git
-
-1.  cd pyautogui-command-generator
-
-Install Python dependencies:  
-```
-pip install -r requirements.txt
-```
-**requirements.txt**:  
-pyautogui
-
-1.  pyperclip
-2.  Install ADB and add to system PATH:
-    *   Download from Android Developer site.
-    *   Enable USB debugging on your Android device.
-
-## **🚀 Usage**
-
-### **Web Interface**
-
-1.  Open index.html in a browser.
-2.  Upload a screenshot or video.
-3.  Choose an interaction mode:
-    *   **Tap**: Click to generate pyautogui.click(x, y).
-    *   **Swipe**: Drag for pyautogui.moveTo and pyautogui.dragTo.
-    *   **Hold**: Click for mouse hold with duration.
-    *   **Keyboard**: Press a key and click Add for pyautogui.press.
-    *   **Hotkey**: Enter two keys for pyautogui.hotkey.
-4.  Copy commands with **Copy** or format with **Format**.
-5.  Clear commands with **Clear**.
-
-### **Python Automation Script**
-
-1.  Connect your Android device and configure ADB.
-
-Copy product text to clipboard:  
-```
-\*Product Name\*: Example Product
-
-\*Product Description\*: Sample description.
-
-\*Product Details\*: Product details.
-```
-Note: Additional notes.
-
-1.  Product Code: ABC123
-2.  Update steps in automation.py with web interface commands.
-3.  Run the script:  
-    python automation.py  
-    The script will:
-    *   Parse clipboard text.
-    *   Execute PyAutoGUI commands (PC).
-    *   Run ADB commands (Android).
-    *   Execute external Python scripts.
-
-## **🔍 How It Works**
-
-### **Web Interface**
-
-*   Built with HTML, CSS, and JavaScript.
-*   Scales coordinates to match original media resolution.
-*   Generates commands in a list, with copy or format as tuples.
-
-### **Python Script**
-
-*   Uses pyperclip to read clipboard text.
-*   Parses data with regex.
-*   Adds delays to PyAutoGUI for reliability.
-*   Supports PC (PyAutoGUI), Android (ADB), wait, and Python script steps.
-
-## **🤝 Contributing**
-
-1.  Fork the repository.
-2.  Create a branch: git checkout -b feature-name.
-3.  Commit changes: git commit -m "Add feature".
-4.  Push branch: git push origin feature-name.
-5.  Open a pull request with a clear description.
-
-## **📜 License**
-
-### **MIT License. See LICENSE for details.**
-
-# **PyAutoGUI Command Generator**
-
-A web-based tool for generating **PyAutoGUI** commands from screenshots or videos, paired with a Python script for automating product data entry using PyAutoGUI and ADB.
-
-## **📖 Table of Contents**
-
-*   Overview
-*   Features
-*   Prerequisites
-*   Installation
-*   Usage
-    *   Web Interface
-    *   Python Automation Script
-*   How It Works
-*   Contributing
-*   License
-
-## **🌟 Overview**
-
-This project combines two powerful components:
-
-*   **Web Interface** – Generate PyAutoGUI commands by interacting with uploaded media.
-*   **Python Script** – Automate product data entry with PyAutoGUI for PC and ADB for Android.
-
-Not just for simple tasks, this tool supports **complex automation workflows** across PC and mobile devices.
-
-## **✨ Features**
-
-### **Web Interface**
-
-*   Upload screenshots or videos to create PyAutoGUI commands.
-*   Interaction modes: **Tap, Swipe, Hold, Keyboard, Hotkey**.
-*   Visual feedback for swipe and hold with custom durations.
-*   Copy raw or formatted commands to clipboard.
-*   Clear or format commands for script integration.
-
-### **Python Script**
-
-*   Parses product data (name, description, code) from clipboard.
-*   Automates browser tasks with PyAutoGUI.
-*   Controls Android devices via ADB commands.
-*   Runs external Python scripts in the workflow.
-*   Configurable delays for reliable execution.
-
-## **🛠 Prerequisites**
-
-### **Web Interface**
-
-*   A modern browser (Chrome, Firefox, Edge, etc.).
-
-### **Python Script**
-
-*   Python 3.6+.
-*   Required packages:  
-    pip install pyautogui pyperclip
-*   ADB (Android Debug Bridge) installed and configured.
-*   Android device with USB debugging enabled.
-*   PyAutoGUI fail-safe enabled (move mouse to top-left to stop).
-
-## **⚙️ Installation**
-
-Clone the repository:  
+Clone this repository:  
+  
 git clone https://github.com/afnan-nex/python-scripts-for-pc-and-android-automations.git
 
-1.  cd pyautogui-command-generator
+cd python-scripts-for-pc-and-android-automations
 
-Install Python dependencies:  
-```
-pip install -r requirements.txt
-``` 
-**requirements.txt**:  
-pyautogui
+Install the required Python libraries:  
+  
+pip install pyautogui pyperclip
 
-1.  pyperclip
-2.  Install ADB and add to system PATH:
-    *   Download from Android Developer site.
-    *   Enable USB debugging on your Android device.
+1.  Ensure ADB is installed and your Android device is connected:  
+    *   Download and install ADB from the [Android Developer site](https://developer.android.com/tools/releases/platform-tools).
+    *   Enable USB debugging on your Android device and connect it to your PC.
 
-## **🚀 Usage**
+Verify the connection by running:  
+adb devices
 
-### **Web Interface**
+## **Usage**
 
-1.  Open index.html in a browser.
-2.  Upload a screenshot or video.
-3.  Choose an interaction mode:
-    *   **Tap**: Click to generate pyautogui.click(x, y).
-    *   **Swipe**: Drag for pyautogui.moveTo and pyautogui.dragTo.
-    *   **Hold**: Click for mouse hold with duration.
-    *   **Keyboard**: Press a key and click Add for pyautogui.press.
-    *   **Hotkey**: Enter two keys for pyautogui.hotkey.
-4.  Copy commands with **Copy** or format with **Format**.
-5.  Clear commands with **Clear**.
+### **1\. ADB Command Generator**
 
-### **Python Automation Script**
+The adb\_command\_generator.html file provides a web interface to generate ADB commands for Android automation.
 
-1.  Connect your Android device and configure ADB.
+*   **How to use**:  
+    
 
-Copy product text to clipboard:  
-'''
-\*Product Name\*: Example Product
+Serve the HTML file using a local server:  
+python -m http.server 8000
 
-\*Product Description\*: Sample description.
+*   *   Open http://localhost:8000/adb\_command\_generator.html in your browser.
+    *   Upload a screenshot or video of your Android device's screen.
+    *   Select an interaction mode (Tap, Swipe, or Hold) and interact with the media to generate ADB commands.
+    *   Use the "Copy" button to copy commands or "Format" to generate a Python-compatible list of commands for use in scripts.
+*   **Features**:  
+    *   Supports tap, swipe, and hold interactions.
+    *   Visual feedback for swipe and hold actions.
+    *   Adjustable swipe and hold durations.
+    *   Copy commands as plain text or formatted as a Python list.
 
-\*Product Details\*: Product details.
-'''
-Note: Additional notes.
+### **2\. PyAutoGUI Command Generator**
 
-1.  Product Code: ABC123
-2.  Update steps in automation.py with web interface commands.
-3.  Run the script:  
-    python automation.py  
-    The script will:
-    *   Parse clipboard text.
-    *   Execute PyAutoGUI commands (PC).
-    *   Run ADB commands (Android).
-    *   Execute external Python scripts.
+The pyautogui\_command\_generator.html file provides a web interface to generate PyAutoGUI commands for PC automation.
 
-## **🔍 How It Works**
+*   **How to use**:  
+    
 
-### **Web Interface**
+Serve the HTML file:  
+python -m http.server 8000
 
-*   Built with HTML, CSS, and JavaScript.
-*   Scales coordinates to match original media resolution.
-*   Generates commands in a list, with copy or format as tuples.
+*   *   Open http://localhost:8000/pyautogui\_command\_generator.html in your browser.
+    *   Upload a screenshot or video of your PC screen.
+    *   Select an interaction mode (Tap, Swipe, Hold, Keyboard, or Hotkey) and interact with the media or input fields to generate PyAutoGUI commands.
+    *   Copy or format the commands as needed.
+*   **Features**:  
+    *   Supports tap, swipe, hold, keyboard, and hotkey interactions.
+    *   Visual feedback for swipe and hold actions.
+    *   Key capture for keyboard and hotkey inputs.
+    *   Formatted output for integration into Python scripts.
 
-### **Python Script**
+### **3\. Automation Script (main.py)**
 
-*   Uses pyperclip to read clipboard text.
-*   Parses data with regex.
-*   Adds delays to PyAutoGUI for reliability.
-*   Supports PC (PyAutoGUI), Android (ADB), wait, and Python script steps.
+The main.py script automates tasks by combining PC and Android interactions, such as navigating a website, entering product data, and transferring files.
 
-## **🤝 Contributing**
+*   **How to use**:  
+    *   Ensure your Android device is connected via ADB and USB debugging is enabled.
+    *   Copy product text (formatted with Product Name, Product Description, Product Details, etc.) to your clipboard.
+    *   Edit the steps list in main.py to customize the automation steps (e.g., coordinates, commands).
 
-1.  Fork the repository.
-2.  Create a branch: git checkout -b feature-name.
-3.  Commit changes: git commit -m "Add feature".
-4.  Push branch: git push origin feature-name.
-5.  Open a pull request with a clear description.
+Run the script:  
+python main.py
 
-## **📜 License**
+*   **Features**:  
+    *   Parses product text from the clipboard using regex.
+    *   Executes a sequence of PC (pyautogui), Android (adb), wait, and Python script steps.
+    *   Includes a fail-safe: move the mouse to the top-left corner to stop the script.
+    *   Adds a uniform delay (STEP\_DELAY) between steps for stability.
 
-### **MIT License. See LICENSE for details.**
+**Example Step List**:  
+  
+steps = \[
+
+('pc', lambda: pyautogui.click(131, 752)), # Click to focus browser
+
+('android', 'adb shell input tap 182 728'), # Tap on Android app
+
+('wait', 3), # Wait for 3 seconds
+
+('py', r'C:\\Users\\Admin\\Desktop\\torunwithin.py'), # Run external Python script
+
+\]
+
+## **Notes**
+
+*   **Security**: The HTML command generators require a secure context (HTTPS or localhost) for clipboard functionality. Use a local server to test.
+*   **Coordinates**: The generated coordinates are based on the uploaded media's resolution. Ensure the media matches the actual device or screen resolution for accurate automation.
+*   **Customization**: Modify the steps list in main.py to adapt the automation to your specific use case. Use the command generators to obtain accurate coordinates and commands.
+*   **Dependencies**: Ensure external Python scripts referenced in the steps list (e.g., torunwithin.py) exist and are accessible.
+
+## **Contributing**
+
+Contributions are welcome! Please open an issue or submit a pull request with improvements or bug fixes.
+
+## **License**
+
+This project is licensed under the MIT License. See the [LICENSE](https://grok.com/chat/LICENSE) file for details.
