@@ -43,9 +43,9 @@ adb devices
 
 ## **Usage**
 
-### **1\. ADB Command Generator**
+### **1. ADB Command Generator**
 
-The adb\_command\_generator.html file provides a web interface to generate ADB commands for Android automation.
+The adb_command_generator.html file provides a web interface to generate ADB commands for Android automation.
 
 *   **How to use**:  
     
@@ -53,7 +53,7 @@ The adb\_command\_generator.html file provides a web interface to generate ADB c
 Serve the HTML file using a local server:  
 python -m http.server 8000
 
-*   *   Open http://localhost:8000/adb\_command\_generator.html in your browser.
+*   *   Open http://localhost:8000/adb_command_generator.html in your browser.
     *   Upload a screenshot or video of your Android device's screen.
     *   Select an interaction mode (Tap, Swipe, or Hold) and interact with the media to generate ADB commands.
     *   Use the "Copy" button to copy commands or "Format" to generate a Python-compatible list of commands for use in scripts.
@@ -63,9 +63,9 @@ python -m http.server 8000
     *   Adjustable swipe and hold durations.
     *   Copy commands as plain text or formatted as a Python list.
 
-### **2\. PyAutoGUI Command Generator**
+### **2. PyAutoGUI Command Generator**
 
-The pyautogui\_command\_generator.html file provides a web interface to generate PyAutoGUI commands for PC automation.
+The pyautogui_command_generator.html file provides a web interface to generate PyAutoGUI commands for PC automation.
 
 *   **How to use**:  
     
@@ -73,7 +73,7 @@ The pyautogui\_command\_generator.html file provides a web interface to generate
 Serve the HTML file:  
 python -m http.server 8000
 
-*   *   Open http://localhost:8000/pyautogui\_command\_generator.html in your browser.
+*   *   Open http://localhost:8000/pyautogui_command_generator.html in your browser.
     *   Upload a screenshot or video of your PC screen.
     *   Select an interaction mode (Tap, Swipe, Hold, Keyboard, or Hotkey) and interact with the media or input fields to generate PyAutoGUI commands.
     *   Copy or format the commands as needed.
@@ -83,7 +83,7 @@ python -m http.server 8000
     *   Key capture for keyboard and hotkey inputs.
     *   Formatted output for integration into Python scripts.
 
-### **3\. Automation Script (main.py)**
+### **3. Automation Script (main.py)**
 
 The main.py script automates tasks by combining PC and Android interactions, such as navigating a website, entering product data, and transferring files.
 
@@ -99,11 +99,11 @@ python main.py
     *   Parses product text from the clipboard using regex.
     *   Executes a sequence of PC (pyautogui), Android (adb), wait, and Python script steps.
     *   Includes a fail-safe: move the mouse to the top-left corner to stop the script.
-    *   Adds a uniform delay (STEP\_DELAY) between steps for stability.
+    *   Adds a uniform delay (STEP_DELAY) between steps for stability.
 
 **Example Step List**:  
   
-steps = \[
+steps = [
 
 ('pc', lambda: pyautogui.click(131, 752)), # Click to focus browser
 
@@ -113,7 +113,7 @@ steps = \[
 
 ('py', r'C:\\Users\\Admin\\Desktop\\torunwithin.py'), # Run external Python script
 
-\]
+]
 
 ## **Notes**
 
