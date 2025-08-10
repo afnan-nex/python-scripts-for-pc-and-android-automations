@@ -65,7 +65,9 @@ git clone https://github.com/yourusername/pyautogui-command-generator.git
 1.  cd pyautogui-command-generator
 
 Install Python dependencies:  
-pip install -r requirements.txt  
+```
+pip install -r requirements.txt
+```
 **requirements.txt**:  
 pyautogui
 
@@ -94,12 +96,13 @@ pyautogui
 1.  Connect your Android device and configure ADB.
 
 Copy product text to clipboard:  
+```
 \*Product Name\*: Example Product
 
 \*Product Description\*: Sample description.
 
 \*Product Details\*: Product details.
-
+```
 Note: Additional notes.
 
 1.  Product Code: ABC123
@@ -206,7 +209,9 @@ git clone https://github.com/afnan-nex/python-scripts-for-pc-and-android-automat
 1.  cd pyautogui-command-generator
 
 Install Python dependencies:  
-pip install -r requirements.txt  
+```
+pip install -r requirements.txt
+``` 
 **requirements.txt**:  
 pyautogui
 
