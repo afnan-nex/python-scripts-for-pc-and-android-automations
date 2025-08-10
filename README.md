@@ -235,12 +235,13 @@ pyautogui
 1.  Connect your Android device and configure ADB.
 
 Copy product text to clipboard:  
+'''
 \*Product Name\*: Example Product
 
 \*Product Description\*: Sample description.
 
 \*Product Details\*: Product details.
-
+'''
 Note: Additional notes.
 
 1.  Product Code: ABC123
