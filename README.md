@@ -107,7 +107,7 @@ steps = [
 ('pc', lambda: pyautogui.click(131, 752)), # Click to focus browser
 ('android', 'adb shell input tap 182 728'), # Tap on Android app
 ('wait', 3), # Wait for 3 seconds
-('py', r'C:\\Users\\Admin\\Desktop\\torunwithin.py'), # Run external Python script
+('py', r'C:\Users\Admin\\Desktop\torunwithin.py'), # Run external Python script
 ]
 ```
 ## **Notes**
