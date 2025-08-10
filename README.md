@@ -102,19 +102,14 @@ python main.py
     *   Adds a uniform delay (STEP_DELAY) between steps for stability.
 
 **Example Step List**:  
-  
+```
 steps = [
-
 ('pc', lambda: pyautogui.click(131, 752)), # Click to focus browser
-
 ('android', 'adb shell input tap 182 728'), # Tap on Android app
-
 ('wait', 3), # Wait for 3 seconds
-
 ('py', r'C:\\Users\\Admin\\Desktop\\torunwithin.py'), # Run external Python script
-
 ]
-
+```
 ## **Notes**
 
 *   **Security**: The HTML command generators require a secure context (HTTPS or localhost) for clipboard functionality. Use a local server to test.
