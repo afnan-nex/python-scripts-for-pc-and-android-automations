@@ -107,7 +107,7 @@ if __name__ == '__main__':
         ('pc', lambda: pyautogui.click(131, 752)),  # Click to focus browser
         ('wait', 3),
         ('pc', lambda: pyautogui.click(1042, 65)),  # Click address bar
-        ('pc', lambda: pyautogui.write('afnandecor.store/wp-admin')),
+        ('pc', lambda: pyautogui.write('www.google.com')),
         ('pc', lambda: pyautogui.press('enter')),
         ('wait', 10),
         ('pc', lambda: pyautogui.click(58, 677)),  # Navigate to Products
@@ -154,4 +154,5 @@ if __name__ == '__main__':
     ]
     
     # Run the automation steps
+
     run_steps(steps)
