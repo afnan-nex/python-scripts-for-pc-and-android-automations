@@ -123,4 +123,4 @@ Contributions are welcome! Please open an issue or submit a pull request with im
 
 ## **License**
 
-This project is licensed under the MIT License. See the [LICENSE](https://grok.com/chat/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/afnan-nex/python-scripts-for-pc-and-android-automations/blob/main/LICENSE) file for details.
