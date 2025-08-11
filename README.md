@@ -51,8 +51,9 @@ The adb_command_generator.html file provides a web interface to generate ADB com
     
 
 Serve the HTML file using a local server:  
+```
 python -m http.server 8000
-
+```
 *   *   Open http://localhost:8000/adb_command_generator.html in your browser.
     *   Upload a screenshot or video of your Android device's screen.
     *   Select an interaction mode (Tap, Swipe, or Hold) and interact with the media to generate ADB commands.
@@ -71,8 +72,9 @@ The pyautogui_command_generator.html file provides a web interface to generate P
     
 
 Serve the HTML file:  
+```
 python -m http.server 8000
-
+```
 *   *   Open http://localhost:8000/pyautogui_command_generator.html in your browser.
     *   Upload a screenshot or video of your PC screen.
     *   Select an interaction mode (Tap, Swipe, Hold, Keyboard, or Hotkey) and interact with the media or input fields to generate PyAutoGUI commands.
