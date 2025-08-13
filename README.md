@@ -16,8 +16,9 @@ To use the tools and scripts in this repository, ensure you have the following:
 *   **Python 3.x** installed on your PC.
 
 **Required Python libraries**:  
+```
 pip install pyautogui pyperclip
-
+```
 *   **ADB (Android Debug Bridge)** installed and configured on your system. Ensure your Android device is connected and USB debugging is enabled.
 *   A modern web browser (e.g., Chrome, Firefox) to run the HTML-based command generators.
 *   A local server (e.g., python -m http.server) to serve the HTML files, as clipboard functionality requires HTTPS or localhost.
@@ -28,6 +29,7 @@ Clone this repository:
 ```
 git clone https://github.com/afnan-nex/python-scripts-for-pc-and-android-automations.git
 ```
+Navigate to
 ```
 cd python-scripts-for-pc-and-android-automations
 ```
