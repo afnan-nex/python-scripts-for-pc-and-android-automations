@@ -25,22 +25,25 @@ pip install pyautogui pyperclip
 ## **Installation**
 
 Clone this repository:  
-  
+```
 git clone https://github.com/afnan-nex/python-scripts-for-pc-and-android-automations.git
-
+```
+```
 cd python-scripts-for-pc-and-android-automations
+```
 
-Install the required Python libraries:  
-  
+Install the required Python libraries:    
+```
 pip install pyautogui pyperclip
-
+```
 1.  Ensure ADB is installed and your Android device is connected:  
     *   Download and install ADB from the [Android Developer site](https://developer.android.com/tools/releases/platform-tools).
     *   Enable USB debugging on your Android device and connect it to your PC.
 
 Verify the connection by running:  
+```
 adb devices
-
+```
 ## **Usage**
 
 ### **1. ADB Command Generator**
