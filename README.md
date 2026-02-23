@@ -1,5 +1,8 @@
 # **Python Scripts for PC and Android Automations**
 
+<a href="[https://afnan-nex.github.io/n8n-variable-code-maker/code-to-file-creator_qwen.html](https://afnan-nex.github.io/python-scripts-for-pc-and-android-automations/AdbAutoGUI%20command%20generator.html)" target="_blank" rel="noopener noreferrer">PC</a>
+<a href="https://afnan-nex.github.io/python-scripts-for-pc-and-android-automations/AdbAutoGUI%20command%20generator.html" target="_blank" rel="noopener noreferrer">Android</a>
+
 This repository contains Python scripts and HTML-based tools for automating interactions on both PC and Android devices using pyautogui for PC automation and ADB (Android Debug Bridge) for Android automation. The tools provided include a web-based interface for generating ADB and PyAutoGUI commands by interacting with screenshots or videos, and a Python script for automating tasks such as product data entry and file transfers between Android and PC.
 
 ## **Features**
